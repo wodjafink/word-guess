@@ -1,10 +1,10 @@
-function letter(character, guessed){
+function letter(character){
 	this.character = character;
 	this.guessed = false;
 
 	this.getChar = function(){
-		if (guessed){
-			return character;
+		if (this.guessed){
+			return this.character;
 		} else {
 			return "_";
 		}
