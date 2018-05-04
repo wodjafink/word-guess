@@ -17,4 +17,12 @@ function letter(character){
 	}
 }
 
+letter.prototype.toString = function(){
+	if (this.guessed){
+		return this.character;
+	} else {
+		return "_";
+	}
+}
+
 module.exports = letter;
